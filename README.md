@@ -1,29 +1,46 @@
 
-# Task B: Face Recognition - Multi-Class Classification
+# Gender Classification from Images
 
-This repository contains the implementation for a multi-class face recognition system that classifies distorted images.
+A simple deep learning pipeline for binary gender classification using either:
 
-## 📁 Folder Structure
-- `train/PersonName/*.jpg` - Clean images
-- `val/PersonName/distortion/*.jpg` - Distorted images
+- ✅ CNN from scratch
+- ✅ MobileNetV2 (transfer learning)
 
-## 📦 Files
-- `model.py` - FaceNet and classifier architecture
-- `dataset.py` - Custom PyTorch datasets for clean and distorted images
-- `evaluate.py` - Evaluates the model using Accuracy, Precision, Recall, F1
-- `models/face_model.pth` - Pretrained model weights (you must add this)
-- `README.md` - Instructions and overview
+## 🔧 Setup
 
-## 🧪 How to Evaluate
 ```bash
-python evaluate.py --val_path path/to/TaskB/val
+pip install -r requirements.txt
 ```
 
-## 📝 Metrics Returned
-Accuracy: 0.0030
-Precision (Macro): 0.0039
-Recall (Macro): 0.0023
-F1 Score (Macro): 0.0023
-Precision (Weighted): 0.0048
-Recall (Weighted): 0.0030
-F1 Score (Weighted): 0.0029
+## 📁 Dataset Structure
+
+```
+dataset/
+├── train/
+│   ├── male/
+│   └── female/
+└── val/
+    ├── male/
+    └── female/
+```
+
+## 🧠 Train the Model
+
+```bash
+python train.py
+```
+
+## 🎯 Evaluate on a Single Image
+
+```bash
+python evaluate.py
+```
+
+The image will be shown and deleted automatically after prediction.
+
+## 🧩 Model Architecture
+
+Choose model type in `train.py` via:
+- `"cnn"` for a custom model
+- `"mobilenetv2"` for transfer learning
+- `"both"` to use MobileNetV2 when possible, fallback to CNN if offline

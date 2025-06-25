@@ -17,5 +17,4 @@ A face recognition system using embeddings to match test and distorted images to
 - Scripts to evaluate on test data and print Accuracy, Precision, Recall, and F1-Score
 - Requirements files
 - Sample output metrics
-- 
 ---

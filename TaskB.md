@@ -20,8 +20,10 @@ python evaluate.py --val_path path/to/TaskB/val
 ```
 
 ## 📝 Metrics Returned
-- Accuracy
-- Precision (macro)
-- Recall (macro)
-- F1 Score (macro)
-- Per-class classification report
+-Accuracy: 0.0030
+-Precision (Macro): 0.0039
+-Recall (Macro): 0.0023
+-F1 Score (Macro): 0.0023
+-Precision (Weighted): 0.0048
+-Recall (Weighted): 0.0030
+-F1 Score (Weighted): 0.0029

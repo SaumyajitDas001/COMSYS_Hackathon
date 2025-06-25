@@ -1,4 +1,4 @@
-# Comsys Hackathon – Face Intelligence Tasks BY Saumyajit Das, Sreyan Datta
+# Comsys Hackathon – Face Intelligence Tasks By Saumyajit Das, Sreyan Datta
 
 This repository contains solutions for the two challenges from the Comsys Hackathon:
 

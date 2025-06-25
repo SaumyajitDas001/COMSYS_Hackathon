@@ -38,6 +38,15 @@ python evaluate.py
 
 The image will be shown and deleted automatically after prediction.
 
+🧠 Predicted Gender: Male
+
+🔍 Evaluation Metrics:
+              precision    recall  f1-score   support
+
+        Male       1.00      0.00      0.00         1
+      Female       0.50      1.00      0.67         1
+
+
 ## 🧩 Model Architecture
 
 Choose model type in `train.py` via:
